@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular Tutorial - YouTube - codedamn</title>
+</head>
+<body ng-app="app">
+  <div ng-controller="people">
+    <div style="display: flex; justify-content: center; align-content: center; margin: 0 auto; padding: 0; flex-wrap: nowrap; max-width: 700px;">
+      <div style="display: flex; justify-content: center; align-items: center; align-content: center; flex-direction: row; padding: 0 20px; box-sizing: border-box; width: fit-content; flex-grow: 1;" ng-repeat="person in persons">
+        <h4 style="margin: 20px 0; border: 3px solid black; width: 100%; padding: 5px;"><span style="font-weight: lighter; text-align: center; text-decoration: underline;">Name:</span> {{person.name}}</h4>
+        <p style="margin: 5px 0; padding: 5px; border: 3px solid black; border-left: 1px;"><span style="font-weight: lighter; text-align: center; text-decoration: underline;">Age</span> {{person.age}}</p>
+      </div>
+    </div>
+  </div>
+  <script src="./node_modules/angular/angular.min.js"></script>
+  <script src="16.js"></script>
+</body>
+</html>
